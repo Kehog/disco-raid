@@ -4,7 +4,6 @@ const internal = require('stream');
 
 const client = new Client({ 
   intents: [
-    IntentsBitField.Flags.Guilds,
     IntentsBitField.Flags.GuildMembers,
     IntentsBitField.Flags.GuildMessages,
     IntentsBitField.Flags.MessageContent,
@@ -42,4 +41,4 @@ client.on('interactionCreate', async (interaction) => {
   }
 });
 
-client.login(process.env.TOKEN);
+client.login('MTI0MDAxMzQzODY5NzM0MDkzOA.G6zjTG.PgYGSAWfYGYXoQ-jDwBNhthrHS9oho9Zuqd18w');
